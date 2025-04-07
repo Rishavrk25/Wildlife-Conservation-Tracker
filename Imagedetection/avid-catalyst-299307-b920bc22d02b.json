@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "avid-catalyst-299307",
+  "private_key_id": "b920bc22d02b70edbd48f36aba822f6e5f9730ae",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDCY1U/zkkgzucj\n9s4CEG7G3lW/GamH2+ggaVSz+0j0nHEPrJQQe92M9WXVYumjnGP1842tWlgWSCQL\nqNMVfFqhTSSE93JrPvk5akES+BOln73Kv8K0PL0UUKKbF12OnEJYkJO5Pi7V/bCY\nWC/m3sILkXctm6dg/Vz+km4T2XLH+G+uMNxrvQgUrsVbh0LCY1t42bKBPhXBnIkA\nHXe1/8zSoqxkNqSSPmavB8YR/kZPoB5mTq9dJG9ew8RXXf/y8q6gTwl+4VBpNFIF\nRn6FCQ0dkBMKBk8d24qFv9tptXXGUJAuasr9pur6yGwr1kah3YUug68ZPkS+clwW\nYpCNHPfjAgMBAAECggEAL796lzuyls571EexfqxOqaa/ZTuGewq3UA7PcY5N81fi\nJbl8fTgPyaoVo36yaS/nFekHageBD6gUwpBrmSF8mZZ7W/X0Mwe67DF/Xot1N/+u\n/PhxeRhaUX0lE/d/UaJsYZjR0HTHyGSSVjmDOrCI9ZJ7tcZALQDPMPEC/Pkyyo98\nLLkB82we9RSXK9FkDHSt6MG8d9CHFw7KF9dvXs53JNVji3AjwOIjlXeIVWye731r\ne7y0w3Uz9jcqQnnIJ/Cj0HFDObawSMU20NrRufVnlt9YNlLlQIo1T8t4X0uO68+F\nqBFSN9EYPE0q/yEnQDm2Z7S0DXohb/zNnIXRFfpUoQKBgQDldTEJSrepShX5Juxf\nHNhKHsjwCgUBmBRFQ1jT/SwqZgdQmhN80fQUm6JMBfSuTwdfqxDRg5BGgp4mG8dI\nzu7HGG6xTOCyoy8UjgqCrqdPq5KKklC2NXXqPV6Vte5Jq6RywvoAC0Augo9rkdkn\n5j3lWQWA45o1QBcQyv/WMVHhiQKBgQDY36PFEHMHTtmc10+8Vn7pko6gByApMSrd\nwohJKzNmk/klY7rIkt/MLqK8mZ532HPuU0ydwoVAkGaez5wETfQiCP0BmybYnymZ\nmrPxlXMMmp9fWUk2Qc9ZU0bW6aAUi+xu+YfY0+EXB1LfArBmXjppAtRYOKjRFwSJ\nMrbDdUdPCwKBgFjpr2WtWTu1JIyWI5O7hqg6A5zYFRaICprIPPxwJxQK0xzNh22f\noZf2ss4IpMaCgxX0IKE+/MIFzShxLSiuXuIxOntjkdJG33B0legLq3N4xWECz1m7\nn4Rz4Vnb1IkhhKifmuY3ddhP6SlCq8YFNsjPVQ2bpF6sBgQQ1U/3boYZAoGAI01k\nLzPaRZpEOg+iXxoFVqgQp2QBjDMAs1BzNtXdbBkyOS/eu7+MxoPg4apv7TpCxMyy\ncAu1/SiES92nm9vEnbWw2Y4T6Lcf4m0YVX7qV2bkAnVaQYa85eF0ao9lC3MrbXUY\n8+apgUIj70FUzZURFP7s6d9vO3nvtxWWQoLYtLkCgYEAlRZBNJKMuymIg8RrSG+l\nHzWnYxR05dPdNu9PazHC3VhIzwW25QHTLDeTWHbttV7SbeQNRP0a/lWIxWEwlstx\nTWMsJjzvz6jGocomLdQiQoXGVn+vMoTJS8TNzQrkIpEMw59skt7H/vM70mym0roO\nE83rwOZL+wFEpimwyEj8C1c=\n-----END PRIVATE KEY-----\n",
+  "client_email": "wildlife-conservation-tracker@avid-catalyst-299307.iam.gserviceaccount.com",
+  "client_id": "104428808303639888474",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/wildlife-conservation-tracker%40avid-catalyst-299307.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

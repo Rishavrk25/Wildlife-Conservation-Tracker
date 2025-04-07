@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Sightings Database</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .nav {
+            margin-bottom: 20px;
+        }
+        .nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wildlife Sightings Database</h1>
+        
+        <div class="nav">
+            <a href="/">Back to Image Detection</a>
+        </div>
+        
+        <div id="sightings">
+            <p>Loading sightings...</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async function() {
+            const sightingsDiv = document.getElementById('sightings');
+            
+            try {
+                // Fetch sightings from the server
+                const response = await fetch('/sightings');
+                const data = await response.json();
+                
+                if (data.sightings && data.sightings.length > 0) {
+                    // Create table to display sightings
+                    let html = `
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Animal</th>
+                                    <th>Location</th>
+                                    <th>Confidence</th>
+                                    <th>Date/Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                    `;
+                    
+                    data.sightings.forEach(sighting => {
+                        const confidence = (sighting.confidence || 0).toFixed(2);
+                        const date = new Date(sighting.timestamp).toLocaleString();
+                        
+                        html += `
+                            <tr>
+                                <td>${sighting.id}</td>
+                                <td>${sighting.animal_name}</td>
+                                <td>${sighting.location}</td>
+                                <td>${confidence}%</td>
+                                <td>${date}</td>
+                            </tr>
+                        `;
+                    });
+                    
+                    html += `
+                            </tbody>
+                        </table>
+                    `;
+                    
+                    sightingsDiv.innerHTML = html;
+                } else {
+                    sightingsDiv.innerHTML = '<p>No sightings recorded yet.</p>';
+                }
+            } catch (error) {
+                sightingsDiv.innerHTML = `<p>Error loading sightings: ${error.message}</p>`;
+            }
+        });
+    </script>
+</body>
+</html>
